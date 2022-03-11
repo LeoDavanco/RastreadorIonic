@@ -9,7 +9,7 @@ export class CorreioService {
   constructor(private http : HttpClient) { }
 
   localizarObjeto(codigoObjeto : string){
-    let url = 'http://cors-anywhere.herokuapp.com/https://proxyapp.correios.com.br/v1/sro-rastro/NX598805383BR' + codigoObjeto;
+    let url = 'https://cors-anywhere.herokuapp.com/https://proxyapp.correios.com.br/v1/sro-rastro/' + codigoObjeto;
 
     var header = {
     headers : new HttpHeaders()
